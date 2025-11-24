@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('Prices.css');
+@import url('Duvidas.css');
+@import url('agendamentos.css');
+@import url('footer.css');
+
+:root {
+    --color-primary-1: #cfe8d1;
+}
+
+
+* {
+     font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background:#dbead5;
+
+}
+
+section {
+    padding: 28px 8%;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #43cc31;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: black;
+
+}
+
+.btn-default:hover {
+    background-color: #d9e6d7;
+
+
+}
+
+.social_media_buttons {
+    display: flex;
+    gap: 18px;
+
+}
+
+.social_media_buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease ;
+
+}
+
+.social_media_buttons:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.section-title {
+    color: #458642;
+    font-size: 1.563rem;
+}
+
+.section-subtitles {
+    font-size: 2.1875rem;
+}
+
+

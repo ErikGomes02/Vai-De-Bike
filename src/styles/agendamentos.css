@@ -1,0 +1,99 @@
+.agendamento-section {
+  background-color:#f5f9f5;  
+  padding: 60px 25px;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  margin: 35px auto;
+  justify-content: center;
+  max-width: 1100px;
+  border-radius: 16px; 
+}
+
+.agendamento-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px; 
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.agendamento-container h2 {
+  color: #222;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.agendamento-container p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.agendamento-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #cde8cd;
+  border-radius: 8px; /* bordas arredondadas nos inputs */
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4caf50;
+  background-color: #ffffff;
+}
+
+.btn-agendar {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px; /* mantém o botão arredondado */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+  background-color: #43a047;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 800px) {
+  .agendamento-section {
+    margin: 20px auto;
+    padding: 40px 15px;
+    border-radius: 12px;
+  }
+
+  .agendamento-container {
+    padding: 30px 20px;
+  }
+
+  .agendamento-container h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="src/styles/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Escola Edy Bike</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <i class="fa-solid fa-bicycle" id="nav_logo"> VaiDeBike</i>
+
+      <ul id="nav_list">
+        <li class="nav-item active"><a href="#home">Início</a></li>
+        <li class="nav-item"><a href="#prices">Preços</a></li>
+        <li class="nav-item"><a href="#duvidas">Dúvidas</a></li>
+        <li class="nav-item"><a href="#agendamentos">Agendamentos</a></li>
+      </ul>
+
+      <a href="#agendamentos" class="btn-default">
+        Agende Já Sua Aula!
+      </a>
+
+      <button id="mobile_btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav-item"><a href="#home">Início</a></li>
+        <li class="nav-item"><a href="#prices">Preços</a></li>
+        <li class="nav-item"><a href="#duvidas">Dúvidas</a></li>
+        <li class="nav-item"><a href="#agendamentos">Agendamentos</a></li>
+      </ul>
+
+      <a href="#agendamentos" class="btn-default">
+        Agende Já Sua Aula!
+      </a>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="home">
+      <div class="shape"></div>
+      <div id="cta">
+        <h1 class="title">
+          Saia do Sofá e Venha <span>Pedalar!</span>
+        </h1>
+        <p class="description">
+          A Escola EdyBike mostra na prática que não tem idade pra começar a
+          pedalar.
+        </p>
+        <div id="cta_buttons">
+          <a href="#prices" class="btn-default">Ver Pacotes</a>
+          <a href="tel:+xxxxxxxxxxx" id="phone_buttons">
+            <button class="btn-default">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+            (71)99999-9999
+          </a>
+        </div>
+        <div class="social_media_buttons">
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div id="banner">
+        <img
+          src="src/images/image1-removebg-preview.png"
+          alt="Duas crianças andando de bicicleta"
+        />
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2 class="section-title">Preços</h2>
+      <h3 class="section-subtitles">Planos Promocionais</h3>
+
+      <div id="packages">
+        <div class="packs">
+          <div class="bicycle"><i class="fa-solid fa-bicycle"></i></div>
+          <img
+            src="src/images/aula1.jpg"
+            class="bicycle-img"
+            alt="homem andando de bicicleta sozinho"
+          />
+          <h3 class="pack-title">Aula individual - Aprendizado Personalizado</h3>
+          <span class="aula-description">
+            Aula exclusiva com acompanhamento individualizado: apenas professor
+            e aluno. Ideal para quem deseja aprender no seu próprio ritmo, com
+            atenção total do instrutor.
+          </span>
+          <div class="aularate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(300+)</span>
+          </div>
+          <div class="aula-price">
+            <h4>R$219,90</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="packs">
+          <div class="bicycle"><i class="fa-solid fa-bicycle"></i></div>
+          <img
+            src="src/images/aula2.webp"
+            class="bicycle-img"
+            alt="homem andando de bicicleta sozinho"
+          />
+          <h3 class="pack-title">Aula Em Dupla - Aprendizado Compartilhado</h3>
+          <span class="aula-description">
+            Aula com dois alunos e um instrutor, ideal para quem quer aprender
+            ou evoluir junto com um amigo, parceiro ou familiar.
+          </span>
+          <div class="aularate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(324+)</span>
+          </div>
+          <div class="aula-price">
+            <h4>R$329,90</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="packs">
+          <div class="bicycle"><i class="fa-solid fa-bicycle"></i></div>
+          <img
+            src="src/images/aula3.jpg"
+            class="bicycle-img"
+            alt="homem andando de bicicleta sozinho"
+          />
+          <h3 class="pack-title">
+            Aula Em Família - Diversão e Aprendizado Para Todos
+          </h3>
+          <span class="aula-description">
+            Aprender a pedalar fica ainda melhor em família! A aula em grupo é
+            pensada para pais e filhos, irmãos ou familiares que desejam
+            compartilhar momentos de aprendizado, lazer e superação.
+          </span>
+          <div class="aularate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(208+)</span>
+          </div>
+          <div class="aula-price">
+            <h4>R$450,90</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="duvidas-section" id="duvidas">
+      <div class="duvidas-container">
+        <div class="duvidas-image">
+          <img
+            src="src/images/duvidasim-removebg-preview.png"
+            alt="Aulas de exemplo"
+          />
+        </div>
+
+        <div class="duvidas-content">
+          <h2>Dúvidas Frequentes</h2>
+
+          <div class="duvida-item">
+            <button class="duvida-pergunta">
+              1 - O aluno precisa levar equipamentos?
+            </button>
+            <div class="duvida-resposta">
+              <p>
+                Não é necessário levar equipamentos. Todo o material é
+                fornecido pela escola.
+              </p>
+            </div>
+          </div>
+
+          <div class="duvida-item">
+            <button class="duvida-pergunta">2 - Onde são as aulas?</button>
+            <div class="duvida-resposta">
+              <p>
+                As aulas acontecem em local previamente combinado entre o
+                instrutor e o aluno.
+              </p>
+            </div>
+          </div>
+
+          <div class="duvida-item">
+            <button class="duvida-pergunta">
+              3 - Qual o horário das aulas?
+            </button>
+            <div class="duvida-resposta">
+              <p>
+                Os horários são combinados entre instrutor e aluno, de acordo
+                com a disponibilidade do aluno.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="agendamento-section" id="agendamentos">
+      <div class="agendamento-container">
+        <h2>Agende Sua Aula</h2>
+        <p>Preencha os dados abaixo e entraremos em contato.</p>
+
+        <form
+          action="https://formspree.io/f/SEU-ENDPOINT-AQUI"
+          method="POST"
+          class="agendamento-form"
+        >
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="plano">Plano escolhido</label>
+            <select id="plano" name="plano" required>
+              <option value="">Selecione</option>
+              <option value="individual">Aula individual</option>
+              <option value="dupla">Aula em dupla</option>
+              <option value="familia">Aula em família</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dia">Dia desejado</label>
+            <input type="date" id="dia" name="dia" required />
+          </div>
+
+          <div class="form-group">
+            <label for="horario">Horário</label>
+            <input type="time" id="horario" name="horario" required />
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">Número do WhatsApp</label>
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="(00) 00000-0000"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-agendar">Enviar Agendamento</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="src/images/wave.svg" alt="" />
+    <div id="footer_items">
+      <span id="copyrite">&copy; 2025 Erik Gomes</span>
+      <div class="social_media_buttons">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript/script.js"></script>
+</body>
+</html>
